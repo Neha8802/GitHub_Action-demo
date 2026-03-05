@@ -16,3 +16,10 @@ jobs:
     steps:
       - name: say hello to users
         run: echo "Hello-Dost"
+
+  details:
+    runs-on: ubuntu-latest
+    
+    steps:
+     - name: Tell docker and python version
+       run: docker --version && python --version
