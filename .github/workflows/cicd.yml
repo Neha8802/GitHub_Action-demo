@@ -1,0 +1,39 @@
+# give name to your workflow that would display on github action tab
+name: cicd
+
+on:
+  workflow_dispatch: 
+
+jobs:
+
+  code:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: clone the code
+        run: echo "clone code from github"
+
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: build the application
+        run: echo "docker container build"
+
+  Test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: test the code
+        run: echo "testing the container"
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: deploy my code
+        run: echo "docker run deploy mycode"
+
+      
+
+    
