@@ -2,8 +2,7 @@
 name: Helllo
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch: 
 
 
 # job is inside the workflow
